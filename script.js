@@ -14,9 +14,9 @@ function jump () {
     }, 300);
 }
 
-let isAlive = setInterval( function() {
-    let dinoTop = rarseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-    let cactusLeft = rarseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+var isAlive = setInterval( function() {
+    var dinoTop = rarseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+    var cactusLeft = rarseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
         alert("GAME OVER!!");
